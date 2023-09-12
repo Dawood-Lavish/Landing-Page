@@ -1,0 +1,55 @@
+
+.Contaner{
+display: grid;
+height: fit-content;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+"nav nav nav"
+"main main main"
+"content1 content1 content1"
+"content2 content2 content2"
+"content3 content3 content3"
+"footer footer footer"
+;
+
+}
+nav{
+background-color: rgb(232, 240, 240);
+grid-area:nav;  
+}
+
+main{
+grid-area: main;
+}
+#content1{
+margin-top: 60px;
+grid-area: content1;
+}
+#content2{
+grid-area: content2;
+}
+#content3{
+grid-area: content3;
+}
+footer{
+grid-area: footer;
+height: fit-content;
+}
+@media only screen and (max-width:390px){
+    footer>.double-page>.first-page{
+        display: none;
+    }
+    footer>.double-page{
+        flex-wrap: wrap;
+    }
+    .Contaner1>.logo-main{
+        display: none;
+    }
+
+}
+/* @media only screen and (max-width:400px){
+    body{
+        display: none;
+    }
+} */

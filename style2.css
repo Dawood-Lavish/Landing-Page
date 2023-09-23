@@ -1,5 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,300;1,400&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 *{
   margin: 0;
   padding: 0;
@@ -53,45 +55,32 @@ img:hover{
     justify-content: flex-end;
    
 }
-.slash>img{
-    position: absolute;
-    width: 92px;
-  right: 105px;
-  top: 51px;
-}  
-.slash{
-    display: flex;
-    justify-content: flex-end;
-   
-}
 .text-main>p{
     position: absolute;
     width: 43%;
     top: 186px;
     color: white;
     font-family: Playfair Display;
-    font-size: 3vw;
+    font-size: 43px;
     left: 88px;
 }  
-.text-main{
-}
-.text-main1>p{
+.text-main1 p{
   position: absolute;
   top: 426px;
   color: white;
   left: 82px;
-  font-size: 2vw;
-  width: 62%;
+  font-size: 21px;
+  width: 40%
 }  
 .text-main1{  
 }
-.text-main2>a>p{
+.text-main2 a p{
   position: absolute;
-  top: 541px;
+  top: 572px;
   color: white;
-  left: 87px;
+  left: 81px;
   font-style: italic;
-  font-size: 1.2vw;
+  font-size: 20px;
 }  
 .text-main2{  
 }
@@ -182,11 +171,12 @@ main{
   }
   .text3{
     display: flex;
-    justify-content: center;
-    width:fit-content;
+    /* justify-content: center; */
+    width: 70%;
     text-align: center;
     color: rgb(83, 84, 88);
-    height: fit-content;
+    margin: auto;
+    margin-top: 24px;
   }
   .text>p{
     line-height: 1.5;
@@ -197,12 +187,14 @@ main{
   }
   .box{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
-   border-radius: 0 28px;
-  width: 289px;
-  margin: auto;
-  align-items: center;
+    border-radius: 0 28px;
+    width: 289px;
+    margin: auto;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 16px;
   }
   .box:hover{
     cursor: pointer;
@@ -492,5 +484,40 @@ footer>.last>.logos>a{
   line-height: 1.5;
   letter-spacing: 0.00938em;
   font-size: 19px;
+}
+@media only screen and (max-width:600px){
+  .text-main p{
+      width: 100%;
+      left: 0px;
+      text-align: center;
+      
+  }
+  .text-main1 p{
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    margin-top: 10rem;
+  }
+  .text-main2 a p{
+        position: absolute;
+    top: 490px;
+    color: white;
+    left: 123px;
+    font-style: italic;
+    font-size: 20px
+  }
+  .text3{
+    width: 100%;
+  }
+  footer>.double-page>.first-page{
+      display: none;
+  }
+  footer>.double-page{
+      flex-wrap: wrap;
+  }
+  .Contaner1>.logo-main{
+      display: none;
+  }
+
 }
     

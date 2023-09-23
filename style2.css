@@ -531,6 +531,9 @@ footer>.last>.logos>a{
   .double-page .second-page .p3{
     margin-bottom: 6rem;
   }
+  .double-page .second-page{
+    height: 634px;
+  }
   footer>.double-page>.first-page{
       display: none;
   }

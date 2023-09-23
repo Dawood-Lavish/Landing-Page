@@ -544,6 +544,9 @@ footer>.last>.logos>a{
     flex-direction: column;
     width: 100%;
   }
+  footer>.wallpaper{
+    margin-top: 0px;
+  }
 
 }
     
